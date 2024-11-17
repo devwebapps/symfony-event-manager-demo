@@ -1,0 +1,20 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/.env
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+# Cache, Logs und Sitzungen
+/var/cache/
+/var/log/
+/var/sessions/
+
+# Generierte Dateien
+/public/build/
+/symfony.lock

@@ -1,0 +1,8 @@
+# IDE-spezifische Dateien
+/.idea/
+/*.iml
+/.vscode/
+
+# Betriebssystemspezifische Dateien
+.DS_Store
+Thumbs.db
