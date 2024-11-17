@@ -1,1 +1,1 @@
-# symfony-event-manager-demo
+# Symfony Event Manager Demo
