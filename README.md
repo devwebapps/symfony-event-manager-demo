@@ -48,3 +48,31 @@ created: templates/product/index.html.twig
 created: templates/product/new.html.twig
 created: templates/product/show.html.twig
 </pre>
+
+## Installation
+
+> In order to make the local URL accessible in the browser, the "hosts file" must be adapted. On Mac and Linux systems they can be found under "/etc/hosts". 
+> Add the following entry:
+> ```
+> # Symfony Event Manager Demo
+> 127.0.0.1       sfeventmanagerdemo.local
+> ```
+
+1. Clone the repository
+2. Build the Docker Container
+   ```
+   make build
+   ```
+3. Run the Docker Container
+   ```
+   make startup
+   ```
+4. Open a terminal and go to the root directory level of the web project and run
+   ```
+   docker exec -it php-container bash
+   ```
+5. Execute
+   ```
+   composer install
+   ```
+6. Open a new browser tab and enter the domain `http://sfeventmanagerdemo.local:8080/`
