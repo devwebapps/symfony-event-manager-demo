@@ -67,12 +67,20 @@ created: templates/product/show.html.twig
    ```
    make startup
    ```
-4. Open a terminal and go to the root directory level of the web project and run
+4. Create `.env` file from `env.sample` from the root directory level of the web project
+   ```
+   cp src/.env.example src/.env
+   ```
+5. Open a terminal and go to the root directory level of the web project and run
    ```
    docker exec -it php-container bash
    ```
-5. Execute
+6. Create value for APP_SECRET in .env file and replace it with the new value
+   ```
+   openssl rand -hex 32
+   ```
+7. Execute
    ```
    composer install
    ```
-6. Open a new browser tab and enter the domain `http://sfeventmanagerdemo.local:8080/`
+8. Open a new browser tab and enter the domain `http://sfeventmanagerdemo.local:8080/`
